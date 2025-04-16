@@ -1,0 +1,22 @@
+{
+  "name": "05_browser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "author": "Ondřej Frejvald",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.5.0",
+    "express": "^4.18.2",
+    "express-json": "^1.0.0",
+    "simple-json-db": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
