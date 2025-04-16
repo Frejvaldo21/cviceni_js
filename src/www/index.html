@@ -1,0 +1,36 @@
+<!-- src/www/index.html -->
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrace a Pøihlášení</title>
+    <!-- jQuery knihovna -->
+    <script src="script/jquery.js"></script>
+    <!-- Vlastní skript -->
+    <script src="script/index.js"></script>
+</head>
+<body>
+    <h1>Registrace</h1>
+    <form id="registerForm">
+        <input type="text" name="username" placeholder="Uživatelské jméno" required>
+        <input type="password" name="password" placeholder="Heslo" required>
+        <button type="submit">Registrovat</button>
+    </form>
+
+    <h1>Pøihlášení</h1>
+    <form id="loginForm">
+        <input type="text" name="username" placeholder="Uživatelské jméno" required>
+        <input type="password" name="password" placeholder="Heslo" required>
+        <button type="submit">Pøihlásit</button>
+    </form>
+
+    <h1>Smazání úètu</h1>
+    <form id="deleteForm">
+        <input type="text" name="username" placeholder="Uživatelské jméno" required>
+        <input type="password" name="password" placeholder="Heslo" required>
+        <button type="submit">Smazat úèet</button>
+    </form>
+
+    <div id="message"></div>
+</body>
+</html>
