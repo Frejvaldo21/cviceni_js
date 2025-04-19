@@ -3,33 +3,37 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>Registrace a Pøihlášení</title>
+    <title>Registrace a Pï¿½ihlï¿½enï¿½</title>
     <!-- jQuery knihovna -->
     <script src="script/jquery.js"></script>
-    <!-- Vlastní skript -->
+    <!-- Vlastnï¿½ skript -->
     <script src="script/index.js"></script>
 </head>
 <body>
-    <h1>Registrace</h1>
-    <form id="registerForm">
-        <input type="text" name="username" placeholder="Uivatelské jméno" required>
-        <input type="password" name="password" placeholder="Heslo" required>
-        <button type="submit">Registrovat</button>
-    </form>
-
-    <h1>Pøihlášení</h1>
-    <form id="loginForm">
-        <input type="text" name="username" placeholder="Uivatelské jméno" required>
-        <input type="password" name="password" placeholder="Heslo" required>
-        <button type="submit">Pøihlásit</button>
-    </form>
-
-    <h1>Smazání úètu</h1>
-    <form id="deleteForm">
-        <input type="text" name="username" placeholder="Uivatelské jméno" required>
-        <input type="password" name="password" placeholder="Heslo" required>
-        <button type="submit">Smazat úèet</button>
-    </form>
+    <div id="registerSection">
+        <h1>Registrace</h1>
+        <form id="registerForm">
+            <input type="text" name="username" placeholder="Uï¿½ivatelskï¿½ jmï¿½no" required>
+            <input type="password" name="password" placeholder="Heslo" required>
+            <button type="submit">Registrovat</button>
+        </form>
+    </div>
+    
+    <div id="loginSection">
+        <h1>Pï¿½ihlï¿½enï¿½</h1>
+        <form id="loginForm">
+            <input type="text" name="username" placeholder="Uï¿½ivatelskï¿½ jmï¿½no" required>
+            <input type="password" name="password" placeholder="Heslo" required>
+            <button type="submit">Pï¿½ihlï¿½sit</button>
+        </form>
+    </div>
+    
+    <div id="afterLogin" style="display:none;">
+        <h2 id="welcome"></h2>
+        <ul id="userList"></ul>
+        <button id="deleteAccountBtn">Smazat mÅ¯j ÃºÄet</button>
+        <button id="logoutBtn">OdhlÃ¡sit se</button>
+    </div>
 
     <div id="message"></div>
 </body>

@@ -100,4 +100,9 @@ app.delete('/user', async (req, res) => {
   }
 });
 
+app.get('/users', (req, res) => {
+    const users = getUsers();
+    res.json(users);
+});
+
 module.exports = app;
